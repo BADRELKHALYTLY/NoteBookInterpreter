@@ -42,7 +42,7 @@ will give : {    "resultat": "21"}
 
 Now if we try to test with other idSession 
 {"code":"%python print 6 + cder","idSession":"9362"}
-We'll have a BAD_REQUEST
+We'll have a BAD_REQUEST because cder is not defined in the session 9362
 
 
 
