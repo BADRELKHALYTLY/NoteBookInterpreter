@@ -69,7 +69,7 @@ public class CodeObject implements Serializable {
  	 				throw new Exception("Syntactical error");
  				}
  				}
- 			else if(!expr1.contains("(") && !expr1.contains("(") && !expr1.contains("'")){
+ 			else if(!expr1.contains("(") || !expr1.contains("(") || !expr1.contains("'")){
  			StringBuilder toDisplay = new StringBuilder(expr1.split("print")[1]);
 			try {
 				engine.eval("fer = "+replaceAlphaNumericByValue(toDisplay.toString()));
